@@ -5,21 +5,21 @@
 class Markdrop < Formula
   desc "Peer-to-peer file sharing from the terminal via WebRTC"
   homepage "https://markdrop.in"
-  version "0.2.3"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.2.3/markdrop_0.2.3_darwin_amd64.tar.gz"
-      sha256 "2e4b16e993deb89247428829b032370a06a0b5d79bdae0f15c6068cb9fb0472e"
+      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.3.0/markdrop_0.3.0_darwin_amd64.tar.gz"
+      sha256 "a97d690660cf06219577ed672b2ddc6774febc610fb6bba5e4c679ac40620ccd"
 
       define_method(:install) do
         bin.install "markdrop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.2.3/markdrop_0.2.3_darwin_arm64.tar.gz"
-      sha256 "718658d7d35639f434fe5f4370be93aa43a97e1627d4162fc39a22cf16b3a79f"
+      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.3.0/markdrop_0.3.0_darwin_arm64.tar.gz"
+      sha256 "e86fb10b8cb3d4e72ba2ba175738a47f142638d60fef96bcc26bc758c55d9449"
 
       define_method(:install) do
         bin.install "markdrop"
@@ -29,15 +29,15 @@ class Markdrop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.2.3/markdrop_0.2.3_linux_amd64.tar.gz"
-      sha256 "48112b66ef56e809dc236a1a866d05c07322f040623f55257fac3fe1bd5e04ef"
+      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.3.0/markdrop_0.3.0_linux_amd64.tar.gz"
+      sha256 "1e9790a2bcdab7b1d1b8b27f2743088b6f20c5b7951a09a90f220f84b2f9720e"
       define_method(:install) do
         bin.install "markdrop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.2.3/markdrop_0.2.3_linux_arm64.tar.gz"
-      sha256 "7f6da28bbc45d36ab95abb86228160f7818e6ef0d9eff44d39db6a788511c957"
+      url "https://github.com/himanshkukreja/markdrop/releases/download/v0.3.0/markdrop_0.3.0_linux_arm64.tar.gz"
+      sha256 "d73458110d04edd043ad517425d79f995f3cd6022228b1b8fc47fa97039b9222"
       define_method(:install) do
         bin.install "markdrop"
       end
